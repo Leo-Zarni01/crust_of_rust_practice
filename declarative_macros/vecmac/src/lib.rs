@@ -4,7 +4,7 @@ macro_rules! avec {
         Vec::new()
     };
 
-    ($($element: expr),+ $(,)? ) => { 
+    ($($element: expr),+ $(,)? ) => {
         {
             let mut vs = Vec::new();
             $(vs.push($element);)* // repeat vs.push(element) as many times as indicated by the
